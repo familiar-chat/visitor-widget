@@ -1,0 +1,70 @@
+.Host {
+    min-height    : 60px;
+    margin        : 6px 6px 0 6px;
+    display       : flex;
+    align-items   : center;
+    margin-bottom : 6px;
+    position      : relative
+}
+
+.Host textarea {
+    box-shadow       : rgba(122, 122, 122, 0.1) 0px 0px 6px 3px inset;
+    resize           : none;
+    padding          : 4px;
+    box-sizing       : border-box;
+    border           : solid 1px #BDBDBD;
+    background-color : #FAFAFA;
+    border-radius    : 2px;
+    width            : 100%;
+    height           : 54px;
+    font-size        : 13px;
+}
+
+.Host textarea:focus {
+    outline : none;
+    border  : solid 1px #757575;
+}
+
+.Submit {
+    display : none;
+}
+
+@media (min-width : 300px) {
+    .Host {
+        margin         : 2px;
+        display        : flex;
+        flex-direction : row;
+        min-height     : 42px;
+    }
+
+    .Host textarea {
+        min-height       : 24px;
+        height           : 28px;
+        font-size        : 16px;
+        border           : none;
+        flex-grow        : 1;
+        box-shadow       : none;
+        background-color : transparent;
+        margin           : 4px 2px;
+    }
+
+    .Host textarea:focus {
+        border : none;
+    }
+
+    .Submit {
+        width            : 13%;
+        color            : white;
+        background-color : #03A9F4;
+        border           : none;
+        border-radius    : 2px;
+        display          : block;
+        margin           : 4px 2px;
+        box-shadow       : rgba(0, 0, 0, 0.1) 0px 2px 2px 0px;
+    }
+
+    .SubmitIcon {
+        color     : white;
+        font-size : 22px;;
+    }
+}

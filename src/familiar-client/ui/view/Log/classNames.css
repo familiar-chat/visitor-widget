@@ -1,0 +1,6 @@
+.Host {
+  box-shadow : rgba(0, 0, 0, 0.1) 0px 7px 12px -3px inset, rgba(0, 0, 0, 0.1) 0px -7px 6px -3px inset;
+  flex-grow  : 1;
+  overflow-y : scroll;
+  background : white scroll;
+}

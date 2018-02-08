@@ -1,0 +1,36 @@
+.Host {
+}
+
+.Label {
+    cursor: pointer;
+    border-radius: 50%;
+    background: white;
+    box-shadow: rgba(0,0,0,0.1) 0px 1px 1px 0px;
+    margin: 2px;
+    width: 1.8rem;
+    height: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s all ease-out;
+}
+
+.Label:hover {
+    box-shadow: rgba(0,0,0,0.3) 0px 1px 1px 1px;    
+}    
+
+.Label > :nth-child(1)  {
+    transition: all .3s ease-out;
+    color: rgb(0, 175, 240);
+    margin: 10%;
+}
+
+.Label::hover > :nth-child(1)  {
+    color: #0095cc;
+}
+
+@media (min-width : 300px) {
+    .Label {
+        box-shadow: rgba(0,0,0,0.3) 0px 1px 1px 0px;    
+    }
+}

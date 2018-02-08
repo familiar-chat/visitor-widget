@@ -1,0 +1,7 @@
+.Host {
+    display: flex;
+    list-style-type: none;
+    margin: 4px;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,27 @@
+.Host {
+    min-height       : 20px;
+    padding          : 0 7px;
+    text-align       : right;
+    font-size        : 11px;
+    background-color : #E1F5FE;
+    z-index          : 1;
+    align-items      : center;
+    display          : flex;
+    justify-content  : flex-end;
+}
+
+.FooterLink {
+    cursor : pointer;
+    color  : mediumblue;
+}
+
+@media (min-width : 300px) {
+    .Host {
+        min-height: initial;
+        font-size: 12px;
+        padding: 3px 0;
+    }
+    .FooterLink {
+        font-size: 14px;
+    }
+}

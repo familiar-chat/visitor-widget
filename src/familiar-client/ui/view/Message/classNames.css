@@ -1,0 +1,77 @@
+.Host {
+  position      : relative;
+  border        : 1px solid #bfbfbf;
+  border-radius : 8px;
+  height        : min-content;
+}
+
+.Message {
+  font-size   : 0.7rem;
+  margin      : 3px 8px;
+  height      : min-content;
+  max-width   : 180px;
+  white-space : pre-wrap;
+  word-wrap   : break-word;
+  font-family : Ruda, sans-serif;
+}
+
+.Host:after, .ArrowBox:before {
+  border         : solid transparent;
+  content        : " ";
+  height         : 0;
+  width          : 0;
+  position       : absolute;
+  pointer-events : none;
+}
+
+.Host:after {
+  border-color : rgba(136, 183, 213, 0);
+  border-width : 4px;
+  margin-top   : -4px;
+}
+
+.Host:before {
+  border-color : rgba(194, 225, 245, 0);
+  border-width : 5px;
+  margin-top   : -5px;
+}
+
+.Left {
+  margin-left : 10px;
+}
+
+.Left:before {
+  border-right-color : inherit;
+  right              : 100%;
+  bottom             : 5px;
+}
+
+.Left:after {
+  border-right-color : inherit;
+  right              : 100%;
+  bottom             : 6px;
+}
+
+.Right {
+  margin-right : 10px;
+}
+
+.Right:before {
+  border-left-color : inherit;
+  left              : 100%;
+  bottom            : 5px;
+}
+
+.Right:after {
+  border-left-color : inherit;
+  left              : 100%;
+  bottom            : 6px;
+}
+
+
+@media (min-width : 300px) {
+  .Message {
+    font-size   : 1rem;
+    max-width   : 286px;
+  }
+}

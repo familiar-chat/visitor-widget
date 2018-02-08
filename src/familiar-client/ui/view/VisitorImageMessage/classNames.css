@@ -1,0 +1,13 @@
+.Host {
+    margin          : 8px;
+    display         : flex;
+    justify-content : flex-end;
+    align-items     : flex-end;
+    position        : relative;
+}
+
+.Image {
+    background-color: #E3F2FD;
+    border-radius: 14px;
+    margin: 2%;
+}

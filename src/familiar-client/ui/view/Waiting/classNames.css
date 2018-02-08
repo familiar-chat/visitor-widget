@@ -1,0 +1,40 @@
+.Host {
+    width            : 100%;
+    height           : 100%;
+    background-color : rgba(255,255,255,0.9);
+    display          : flex;
+    flex-direction   : column;
+    justify-content  : center;
+    align-items      : center;
+    cursor           : pointer;
+}
+
+.Message {
+    white-space : nowrap;
+    color       : rgba(0,0,0,0.6);
+    font-size   : 20px;
+    user-select : none;
+}
+
+.Icon {
+    color     : skyblue;
+    font-size : 42px;
+}
+
+@media (max-height : 50px) {
+    .Host {
+        flex-direction : row;
+        background-color: #2196F3;
+    }
+
+    .Icon {
+        font-size : 22px;
+        order     : 1;
+    }
+
+    .Message {
+        color: white;
+        order  : 2;
+        margin : 0 4px;
+    }
+}

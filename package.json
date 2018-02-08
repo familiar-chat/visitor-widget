@@ -1,0 +1,29 @@
+{
+  "name": "visitor-widget",
+  "version": "0.0.1",
+  "scripts": {
+    "postinstall": "npm run postinstall:production",
+    "postinstall:development": "VISITOR_SERVER_URL=http://localhost:3000 webpack -d",
+    "postinstall:production": "webpack -p",
+    "start": "browser-sync start --config bs-config.js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "browser-sync": "^2.18.13",
+    "connect-history-api-fallback": "^1.4.0",
+    "css-loader": "^0.28.7",
+    "postcss-loader": "^2.0.7",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.7.1",
+    "whatwg-fetch": "^2.0.2"
+  }
+}

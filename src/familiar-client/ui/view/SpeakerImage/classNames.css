@@ -1,0 +1,25 @@
+.Host {
+  display        : flex;
+  flex-direction : column;
+}
+
+.Host span {
+  flex-grow : 1;
+}
+
+.Host img {
+  border        : 2px solid white;
+  border-radius : 2px;
+  box-shadow    : rgba(0, 0, 0, 0.2) 0px 0px 4px 0px;
+  width         : 28px;
+  height        : 28px;
+  bottom        : 8px;
+}
+
+
+@media (min-width : 300px) {
+  .Host img {
+    width         : 32px;
+    height        : 32px;
+  }
+}

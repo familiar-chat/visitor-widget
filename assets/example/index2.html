@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example</title>
+        <link rel="stylesheet" href="/example/style.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    </head>
+    <body>
+        <a href="/example/index.html">/example/index.html</a>
+        <h1>accountId 20</h1>
+        <h2>src localhost</h2>
+
+        <!-- Familiar Chat 81 -->
+        <script>
+            let s = document.createElement("script")
+            s.setAttribute("src", (document.location.href.includes("localhost") ? "http://localhost:3000" 
+                                                                                : "https://example.com")
+                                + "/visitor/widget/main.js?account_id=0"
+            )
+
+            document.body.appendChild(s);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+.Host {
+  color     : #555;
+  font-size : 10px;
+  margin    : 0 4px;
+}
+
+@media (min-width : 300px) {
+  .Host {
+    font-size : 10px;
+  }
+}

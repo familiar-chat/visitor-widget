@@ -1,0 +1,7 @@
+.Host {
+    margin          : 8px;
+    display         : flex;
+    justify-content : flex-end;
+    align-items     : flex-end;
+    position        : relative;
+}
