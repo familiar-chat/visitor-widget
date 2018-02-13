@@ -14,9 +14,9 @@ export default ({
         ].join(" ")
       }
     >
-        All of the Business from&nbsp;
+        created By Nozomi Sugiyama
         <a
-            href=""
+            href="https://github.com/familiar-chat/"
             className={classNames.FooterLink}
             target="_blank"
         >
